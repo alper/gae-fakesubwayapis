@@ -15,7 +15,11 @@ if __name__ == '__main__':
 
     (r'/(bart)/getinfo/([a-z0-9]+)/?', fakesubwayapis.boilerplate.getinfo),
     (r'/(bart)/station/([a-z0-9]+)/?', fakesubwayapis.boilerplate.station),    
-    (r'/(bart)/?', fakesubwayapis.boilerplate.docs),    
+    (r'/(bart)/?', fakesubwayapis.boilerplate.docs), 
+    
+    (r'/(gvb)/getinfo/([a-zA-Z0-9]+)/?', fakesubwayapis.boilerplate.getinfo),
+    (r'/(gvb)/station/([a-z0-9]+)/?', fakesubwayapis.boilerplate.station),    
+    (r'/(gvb)/?', fakesubwayapis.boilerplate.docs),   
 
     (r'/(mbta)/getinfo/(\d+)/?', fakesubwayapis.boilerplate.getinfo),
     (r'/(mbta)/station/(\d+)/?', fakesubwayapis.boilerplate.station),    
